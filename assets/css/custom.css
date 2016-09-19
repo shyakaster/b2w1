@@ -178,6 +178,10 @@ section{
     
     text-align: center;
 }
+section.main-content{
+    padding: 40px 0;
+    
+}
 section h2{
     margin: 20px 0 40px;
 }
@@ -400,6 +404,32 @@ textarea {
 	width: 100%;
 	padding: 6px 12px;
 }
+input[type="submit"],
+button[type="submit"] {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: none;
+	border-radius: 6px;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+	outline: none;
+	border: none;
+	background: #aaa;
+}
 
 
 /* ==== MEDIA QUERIES ==== */
@@ -576,6 +606,45 @@ textarea {
 	padding: 20px 0 0;
 	border-top: solid 1px #eee;
 }
+/* === RESOURCES === */
+
+.resource {
+	width: 31.33333333%;
+	float: left;
+	margin: 0 3% 40px 0;
+}
+
+.resource:nth-child(3n) {
+	margin-right: 0;
+}
+/* ==== MEDIA QUERIES ==== */
+
+@media screen and (max-width : 991px) {
+	#instructor .container {
+		background: rgba(255,255,255,0.8);
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width : 768px) {
+	.logo {
+		width: 50%;
+	}
+	
+	#optin p {
+		margin: 0 0 10px;
+	}
+	
+	#featurette iframe {
+		height: 240px;
+	}
+	
+	.resource {
+		width: 48%;
+		margin-right: 2%;
+        min-height: 800px;
+	}
+}
 
 @media screen and (max-width : 568px) {
 	#instructor .num {
@@ -591,6 +660,6 @@ textarea {
 	.resource {
 		width: 100%;
 		margin-right: 0;
+        min-height: 0;
 	}
 }
-
